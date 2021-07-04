@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"><!-- Bootstrap Css -->
+	<link rel="stylesheet" type="text/css" href="F.css">
+	<script src="https://kit.fontawesome.com/e359139315.js" crossorigin="anonymous"></script>
+	<title>Document</title>	
+
+</head>
+
+<body>
+
+	<!--Start topbar-->
+	<section id="topbar" class="bg-light py-1">
+		<div class="container">
+			<div class="row">
+
+				<div class="d-none d-lg-block col text-left">
+					<span class="text-secondary">
+						<i class="fas fa-phone-alt px-2"></i>Call us! +94 76 1234 268
+					</span>
+				</div>
+
+				<div class="d-flex flex-row col text-right justify-content-center">
+
+					<div class="product dropdown">
+						<a href="" class="text-secondary dropdown-toggle" id="topbarDropdown" role="button" data-toggle="dropdown">Create</a>
+						<div class="dropdown-menu">
+							<a href="" class="dropdown-item text-secondary">Shop</a>
+						</div>
+					</div>
+
+					<div class="acccount dropdown">
+						<a href="" class="text-secondary dropdown-toggle" id="topbarDropdown" role="button" data-toggle="dropdown">Account</a>
+						<div class="dropdown-menu">
+							<div class="sign-up">
+								<a href="" class="dropdown-item text-secondary" data-toggle="modal" data-target="#signup">SIGN UP</a>
+							</div>
+							<div class="login">
+								<a href="" class="dropdown-item text-secondary" data-toggle="modal" data-target="#login">LOGIN</a>
+							</div>
+						</div>
+					</div>
+
+					<!--Start content sign-up-->
+					<div class="modal" id="signup">
+						<div class="modal-dialog modal-dialog-centered">
+							<div class="modal-content">
+
+								<div class="modal-header">
+									<h3 class="text-center text-dark">Signup</h3>
+									<button type="button" class="close" data-dismiss="modal"> &times; </button>
+								</div>
+
+								<div class="modal-body">
+									<h5 class="text-center text-success">New here? Create an account</h5>
+									<form>
+										<div class="form-group text-left">
+											<label>Username: </label>
+											<input type="text" name="" class="form-control form-control-lg">
+										</div>
+
+										<div class="form-group text-left">
+											<label> Email: </label>
+											<input type="text" name="" class="form-control form-control-lg">
+										</div>
+
+										<div class="form-group text-left">
+											<label> Password: </label>
+											<div class="input-group">
+												<input type="password" name="" class="form-control" id="pass">
+												<div class="input-group-prepend">
+													<div class="input-group-text">
+														<a href="#" class="text-dark" id="icon-click">
+															<i class="fas fa-eye" id="icon"></i>
+														</a>
+													</div>
+												</div>
+											</div>	
+										</div>
+
+										<div class="form-group text-left">
+											<label> Confirm Password: </label>
+											<input type="password" name="" class="form-control form-control-lg">
+										</div>
+									</form>
+								</div>
+
+								<div class="modal-footer justify-content-center">
+									<button class="btn btn-success px-5" data-dismiss="modal">Signup</button>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<!--End content sign-up-->
+
+					<!--Start content login-->
+					<div class="modal" id="login">
+						<div class="modal-dialog modal-dialog-centered">
+							<div class="modal-content">
+
+								<div class="modal-header">
+									<h3 class="text-center text-dark">Login</h3>
+									<button type="button" class="close" data-dismiss="modal"> &times; </button>
+								</div>
+
+								<div class="modal-body">
+									<h5 class="text-left text-secondary">Want to shop? <a href="" class="text-secondary"><i class="fas fa-user px-2"></i>Register now</a></h5>
+									<h5 class="text-left text-secondary">Want to sell? <a href="" class="text-secondary"><i class="fas fa-store px-2"></i>Become a partner</a></h5>
+									<form>
+
+										<div class="form-group text-left">
+											<label> Email: </label>
+											<input type="text" name="" class="form-control">
+										</div>
+
+										<div class="form-group text-left">
+											<label> Password: </label>
+											<input type="text" name="" class="form-control">
+										</div>
+
+									</form>
+									<div class="forget-password text-left">
+										<a href="" class="text-info" data-toggle="modal" data-target="#forgetPassword" data-dismiss="modal">Forget your password?</a>
+									</div>
+								</div>
+
+								<div class="modal-footer justify-content-center">
+									<button class="btn btn-success px-5" data-dismiss="modal">Login</button>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<!--End content login-->
+
+					<!--Start content forget password-->
+					<div class="modal" id="forgetPassword">
+						<div class="modal-dialog modal-dialog-centered">
+							<div class="modal-content">
+
+								<div class="modal-header">
+									<h3 class="text-center text-dark">Reset your password</h3>
+									<button type="button" class="close" data-dismiss="modal"> &times; </button>
+								</div>
+
+								<div class="modal-body">
+									<h5 class="text-left text-secondary">To reset your password, please enter your email address and create a new password below.</h5>
+									<form>
+
+										<div class="form-group text-left">
+											<label> Email: </label>
+											<input type="text" name="" class="form-control">
+										</div>
+
+										<div class="form-group text-left">
+											<label> Password: </label>
+											<input type="text" name="" class="form-control">
+										</div>
+
+										<div class="form-group text-left">
+											<label> Confirm Password: </label>
+											<input type="text" name="" class="form-control">
+										</div>
+
+									</form>
+								</div>
+
+								<div class="modal-footer justify-content-center">
+									<button class="btn btn-success px-5" data-dismiss="modal">Reset Password</button>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<!--End content forget password-->
+
+					
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<!--End topbar-->
+
+	<!--Start navbar-->
+	<nav class="navbar navbar-expand-md navbar-dark bg-success">
+		<div class="container">
+			<a href="intro.html" class="navbar-brand">Zigzag</a><!--brand name-->
+			<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#dot">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse justify-content-center" id="dot">
+				<ul class="navbar-nav">
+
+					<li class="nav-item">
+						<a href="intro.html" class="nav-link active"><span class=""></span>Start Creating
+						</a>
+					</li><!--This is the active page-->
+					<li class="nav-item">
+						<a href="" class="nav-link">Buy T-shirt</a>
+					</li>
+					<li class="nav-item">
+						<a href="about.html" class="nav-link">About Us</a>
+					</li>
+					<li class="nav-item">
+						<a href="contact.html" class="nav-link">Contact Us</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link"><span class="glyphicon glyphicon-home"></span></a>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+		
+	</nav>
+	<!--End navbar-->
+
+
+	<!--Start slide section with create section-->
+	<section id="slide">
+
+		<div class="left">	
+			<img name="slide" width="100%" height="100%">
+		</div>
+	
+		<div class="right">
+
+			<div class="content">
+				<h1 class="text-dark">Create Your Own T-shirt</h1>
+				<div class="border-top border-primary w-50 mx-auto my-3 d-none d-xl-block"></div>
+				<h5 class="text-dark pb-3 d-none d-lg-block">T-shirt printing is easy with Zigzag</h5>
+				<div class="container pt-3" id="sachi" >
+					<a href="#" class="btn btn-success btn-sm">Design Your T-Shirt</a>
+				</div>						
+			</div>
+
+		</div>
+	
+	</section>
+	<!--End slide section with create section-->
+
+
+	<!--Start travel section-->
+	<section id="travel">
+		<div class="container-fluid" id="delivery">
+			<i class="fas fa-truck fa-2x fa-color fa-customize"></i>
+			<h1>We'll deliver the products you need ASAP</h1>
+		</div>
+	</section>
+	<!--End travel section-->
+
+
+	<!--Start offers section-->
+	<section id="offers">
+		<div class="container">
+
+			<div class="discount">
+
+				<div class="discount1">
+					<img src="img/discount.png" alt="" width="70px" height="70px">
+				</div>	
+				<h1>Up to 60% off</h1>
+				<p>Get a higher discount when you have 4 or more tshirts in an order.</p>	
+			
+			</div>
+
+			<div class="order">
+				<div class="order1">
+					<div class="order2">
+						1+
+					</div>
+				</div>
+				<h1>No Order Minimum</h1>
+				<p>We'll print any tshirts from our collection,no minimum order required.</p>
+			</div>
+
+			<div class="return">
+				<div class="return1">
+					<img src="img/return.png" alt="" width="70px" height="70px">
+				</div>
+				<h1>Easy to return</h1>
+				<p>If you're not 100% satisfied, you'll have 30 days to return your tshirt.</p>
+			</div>
+
+		</div>
+	</section>
+	<!--End offers section-->
+
+
+	<!--Start types of products section-->
+	<section id="type">
+		<h4 class="size">Customizable T-Shirts for Any Occasion</h4>
+
+		<div class="container">
+
+			<div class="card-deck">
+
+				<div class="card text-dark">
+					<img src="img/G.jpg" alt="Tshirts for men" class="card-img">
+					<div class="card-img-overlay">
+						<a href="#">
+							<div class="content">
+								<h4>Men</h4>
+								<p>See all Men's T-Shirts
+									<span><i class="fas fa-angle-right fa-color"></i></span>
+								</p>
+							</div>
+						</a>
+					</div>
+				</div>
+			
+				<div class="card text-dark">
+					<img src="img/H.jpg" alt="Tshirts for women" class="card-img">
+					<div class="card-img-overlay">
+						<a href="#">
+							<div class="content">
+								<h4>Women</h4>
+								<p>See all Women's T-Shirts
+									<span><i class="fas fa-angle-right fa-color"></i></span>
+								</p>
+							</div>
+						</a>
+					</div>
+				</div>
+			
+				<div class="card text-dark">
+					<img src="img/I.png" alt="Tshirt for kids" class="card-img">
+					<div class="card-img-overlay">
+						<a href="#">
+							<div class="content">
+								<h4>Kids</h4>
+								<p>See all Kids' T-Shirts
+									<span><i class="fas fa-angle-right fa-color"></i></span>
+								</p>
+							</div>
+						</a>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+		
+	</section>
+	<!--End types of products section-->
+
+	<!--Start section for purpose of this website-->
+	<section id="definition">
+		<div class="purpose container">
+			<h3 class="aim d-block d-lg-none">T-shirt printing is easy with Zigzag</h3>
+
+			<div class="row">
+
+				<div class="col-12 col-lg-4">
+					<h5>Design Your Own T-shirt</h5>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ducimus, nihil modi veniam, recusandae beatae expedita soluta iusto tempore autem fugiat eligendi? Labore velit natus, rem dolorum quasi ratione necessitatibus, reprehenderit quo vel quae repellat qui maxime quisquam saepe sint, tempora minima. Laudantium consequatur hic quaerat ab corporis accusamus autem, harum aliquam possimus quidem, impedit beatae reprehenderit velit labore? Repellat odit id nesciunt minus maxime doloremque sint obcaecati unde fugit! Cum unde deleniti repellendus nisi sit pariatur cumque fugit doloremque harum similique, quo incidunt dicta laudantium tempore perferendis omnis sapiente numquam vitae consequuntur distinctio. Voluptates odit saepe porro tempora quas?
+					</p>
+				</div>
+
+				<div class="col-12 col-lg-4">
+					<h5>Personalized T-shirts for Every Occasions</h5>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nihil quos at. Voluptatibus earum a quibusdam quos temporibus repudiandae reiciendis blanditiis sequi obcaecati doloremque ullam, dicta corporis porro modi omnis dolore similique. Temporibus natus, laborum labore aut error expedita non rem. Ipsum, delectus? A voluptatum at similique ad ullam excepturi, aliquid expedita iste suscipit atque eaque, voluptates, provident impedit quae repellat sunt dolores! Eaque ea saepe magnam neque numquam tempora quidem eveniet error, aliquam libero nobis ducimus, dolorem rem? Reiciendis nulla harum similique atque quam laboriosam iusto facilis? Distinctio commodi eveniet quae eius omnis, totam quidem sit laboriosam deserunt minus.
+					</p>
+				</div>
+
+				<div class="col-12 col-lg-4">
+					<h5>One Stopn Shop for Custom T-shirts</h5>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti odio, odit incidunt praesentium ea suscipit vitae esse, maxime alias minima accusamus quod, minus vero iusto eos blanditiis? Unde amet nulla mollitia culpa doloribus, et corrupti possimus, rerum officia, facere praesentium cupiditate quos similique delectus nesciunt? Ratione impedit autem blanditiis. Eligendi incidunt doloribus perspiciatis nobis dolorum corrupti blanditiis, ad placeat, nulla quos, ipsam laborum libero rerum itaque minima optio sed? Optio, quae rerum cum at temporibus eaque debitis fugiat sunt minima saepe totam itaque, nobis maxime dolorum. Fugiat ut non aut optio eos repellendus consequatur reprehenderit ipsum dolorem iure. Laboriosam, aut.
+					</p>
+				</div>
+
+			</div>
+
+		</div>
+	</section>
+	<!--End section for purpose of this website-->
+
+	<!--Start another information section-->
+
+	<section id="details">
+		<div class="purpose container">
+
+			<div class="row">
+
+				<div class="payment col-12 col-lg-4">
+					<div class="payment1">
+						<i class="fas fa-lock fa-2x fa-color"></i>
+						<h5>All secure payment methods</h5>
+					</div>
+					<div class="payment2">
+						<i class="fab fa-cc-paypal fa-5x fa-color"></i>
+						<i class="fab fa-cc-visa fa-5x fa-color"></i>
+						<i class="fab fa-cc-mastercard fa-5x fa-color"></i>	
+					</div>
+					<div class="payment3">
+						<a href="#">
+							<h5>
+								Read more <i class="fas fa-angle-right"></i>
+							</h5>
+						</a>
+					</div>
+				</div>
+				<div class="container d-block d-lg-none">
+					<hr color="#43914a" style="width: 100%;">
+				</div>
+				
+				<div class="satisfication col-12 col-lg-4">
+					<div class="satisfication1">
+						<i class="far fa-grin fa-2x fa-color"></i>
+						<h5>Satisfication guaranteed</h5>
+					</div>
+					<div class="satisfication2">
+						<p>Easy returns within 30 days, no questions asked!</p>
+					</div>
+					<div class="satisfication3">
+						<a href="#">
+							<h5>
+								Read more <i class="fas fa-angle-right"></i>
+							</h5>
+						</a>
+					</div>
+				</div>
+				<div class="container d-block d-lg-none">
+					<hr color="#43914a" style="width: 100%;">
+				</div>
+
+				<div class="delivery col-12 col-lg-4">
+					<div class="delivery1">
+						<i class="fas fa-truck fa-2x fa-color"></i>
+						<h5>Nationwide delivery</h5>
+					</div>
+					<div class="delivery2">
+						<i class="fab fa-usps fa-3x fa-color"></i>
+						<i class="fab fa-ups fa-3x fa-color"></i>
+					</div>	
+					<div class="delivery3">
+						<a href="#">
+							<h5>
+								Read more <i class="fas fa-angle-right"></i>
+							</h5>
+						</a>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</section>
+
+	<!--End another information section-->
+
+	<!--Start section for the second part of the footer-->
+
+	<section id="definition">
+		<div class="purpose container">
+
+			<div class="row">
+				
+				<div class="product col-12 col-sm-4 col-lg-2">
+					<ul>
+						<li><h5>Products</h5></li>
+						<li><a href="#">Men</a></li>
+						<li><a href="#">Women</a></li>
+						<li><a href="#">Kids</a></li>
+					</ul>	
+				</div>
+
+				<div class="company col-12 col-sm-4 col-lg-2">
+					<ul>
+						<li><h5>The Company</h5></li>
+						<li><a href="#">About US</a></li>
+						<li><a href="#">Terms & Conditions</a></li>
+						<li><a href="#">Privacy</a></li>
+						<li><a href="#">Partners</a></li>
+						<li><a href="#">Press</a></li>
+						<li><a href="#">Legal Info</a></li>
+					</ul>
+				</div>
+
+				<div class="service col-12 col-sm-4 col-lg-4">
+					<ul>
+						<li><h5>Services</h5></li>
+						<li><a href="#">Screen Printing</a></li>
+						<li><a href="#">Digital Printing</a></li>
+						<li><a href="#">Names & Numbers</a></li>
+					</ul>						
+				</div>
+
+				<div class="resources col-12 col-sm-6 col-lg-2">
+					<ul>
+						<li><h5>Resources</h5></li>
+						<li><a href="#">Photo Editor</a></li>
+						<li><a href="#">Color Wheel</a></li>
+						<li><a href="#">Logo Maker</a></li>
+						<li><a href="#">Colors</a></li>
+						<li><a href="#">Design Size Guide</a></li>
+						<li><a href="#">Ideas</a></li>
+						<li><a href="#">Support</a></li>
+						<li><a href="#">Font Combinations</a></li>
+					</ul>
+				</div>
+				
+				<div class="company col-12 col-sm-6 col-lg-2">
+					<ul>
+						<li><h5>Follow US</h5></li>
+						<div class="d-flex flex-md-column flex-sm-row">
+							<li>
+								<a href="#" class="d-flex justify-content-center px-2">
+									<i class="fab fa-facebook px-1"></i>
+									<p class="d-none d-md-block">Facebook</p>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="d-flex justify-content-center px-2">
+									<i class="fab fa-instagram px-1"></i>
+									<p class="d-none d-md-block">Instagram</p>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="d-flex justify-content-center px-2">
+									<i class="fab fa-twitter px-1"></i>
+									<p class="d-none d-md-block">Twitter</p>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="d-flex justify-content-center px-2">
+									<i class="far fa-envelope px-1"></i>
+									<p class="d-none d-md-block">Email</p>	
+								</a>
+							</li>
+							<li>
+								<a href="#" class="d-flex justify-content-center px-2">
+									<i class="fab fa-pinterest px-1"></i>
+									<p class="d-none d-md-block">Pinterest</p>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="d-flex justify-content-center px-2">
+									<i class="fab fa-flickr px-1"></i>
+									<p class="d-none d-md-block">Flickr</p>
+								</a>
+							</li>
+						</div>
+					</ul>
+				</div>
+
+			</div>
+
+		</div>
+	</section>
+
+	<script type="text/javascript">
+
+		var i = 0;//start point
+		var images = [];
+		var time = 8000;
+
+		//image list
+		images[0] = 'img/D.jpeg';
+		images[1] = 'img/C.jpg';
+		images[2] = 'img/F.jpg';
+		images[3] = 'img/A.jpeg';
+        images[4] = 'img/E.jpg';
+		images[5] = 'img/B.jpg';
+
+		//change image
+		function changeImg(){
+			document.slide.src = images[i];
+
+			if(i < images.length - 1){
+				i++;
+			} else {
+				i = 0;
+			}
+
+			setTimeout("changeImg()", time);
+		}
+
+		window.onload = changeImg;
+
+		//show and hide password
+		$(document).ready(function(){
+			$("#icon-click").click(function(){
+				$("#icon").toggleClass('fa-eye-slash');
+
+				var input = $("#pass");
+				if(input.attr("type")=== "password"){
+					input.attr("type","text");
+				}
+				else{
+					input.attr("type","password");
+				}
+			});
+
+		});
+		
+
+
+	</script>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+
+</body>
+</html> 
