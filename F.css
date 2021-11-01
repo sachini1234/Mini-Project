@@ -736,3 +736,104 @@ section#offers{
         }
     }
 /* End contact page */
+
+/* Start about page */
+#about .about-us a {
+    color: #494949;
+    text-decoration: none;
+}
+
+#about .about-us a:hover {
+    color: rgb(108, 196, 130);;
+}
+/* End about page */
+
+/* Start create page */
+#create {
+    background: rgb(218, 218, 218);
+    box-shadow: #b4f8ba;
+    height: 85%;
+}
+
+#ctreate .add-text a {
+    color: #333333;
+    text-decoration: none;
+}
+
+#create .container {
+    height: 50%; 
+}
+
+#create .subtshirt {
+    max-width: none;
+    position: relative;
+}
+
+#create .subtshirt #text {
+    position: absolute;
+    top: 30%;
+    color: #e6fce8;
+    left: 27%;
+    width: 130px;
+    text-align: center;
+    list-style-type: none;
+}
+
+#create .subtshirt #remove {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    text-align: center;
+    border-radius: 0%;
+    width: 60px;
+    height: 20px;
+}
+
+#create .subtshirt #remove i {
+    color: #ec0826;
+}
+
+#create .container img {
+    width: 100%;
+    height: 50%;
+}
+
+#create button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+}
+
+#create #btn1 {
+    background-color: #ffffff;
+}
+
+#create #btn2 {
+    background-color: #a12c71e3;
+}
+
+#create #btn3 {
+    background-color: #cdcf39;
+}
+
+#create #btn4 {
+    background-color: #32994c;
+}
+
+#create #btn5 {
+    background-color: #30302f;
+}
+
+#create #btn6 {
+    background-color: #a12c71e3;
+}
+
+#create #btn7 {
+    background-color: #cdcf39;
+}
+
+#create #btn8 {
+    background-color: #32994c;
+}
+/* End create page */
