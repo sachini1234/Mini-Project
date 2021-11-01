@@ -600,9 +600,9 @@ section#offers{
         padding: 2.2rem 8.5rem 1rem 8.5rem;
     }
 
-    .contact .cont-info {
+    /* .contact .cont-info {
         display: flex;
-    }
+    } */
 
     .contact .cont-info a{
         text-decoration: none;
@@ -710,9 +710,9 @@ section#offers{
             padding: 2.2rem 0rem 1rem 0rem;
         }
 
-        .contact .cont-info {
+        /* .contact .cont-info {
             flex-direction: column;
-        }
+        } */
 
         .contact .cont-tele,
         .contact .cont-mail {
