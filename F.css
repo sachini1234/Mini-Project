@@ -44,7 +44,7 @@ html, body{
 
 .nav-link.active,
 .nav-link:hover{
-	color: #cdcf39!important
+	color: #b3f8b9!important
 }
 
 /*--End navbar--*/
@@ -748,16 +748,25 @@ section#offers{
 }
 /* End about page */
 
-/* Start create page */
+/* Start create, create1 pages */
 #create {
     background: rgb(218, 218, 218);
     box-shadow: #b4f8ba;
     height: 85%;
 }
 
-#ctreate .add-text a {
-    color: #333333;
+#create .add-text {
+    text-align: center;
+}
+
+#create .add-text a {
+    color: #4e4e4e;
     text-decoration: none;
+}
+
+#create .add-text #select {
+    background-color: rgb(243, 243, 243);
+    border-radius: 1%;
 }
 
 #create .container {
@@ -836,4 +845,62 @@ section#offers{
 #create #btn8 {
     background-color: #32994c;
 }
-/* End create page */
+/* End create, create1 pages */
+
+/* Start to create2 page */
+#create .tshirt .frame {
+    position: relative;
+}
+
+#create .drop-zone {
+    max-width: 120px;
+    height: 120px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    color: #cccccc;
+    border: 4px dashed #009578;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 31%;
+}
+  
+#create .drop-zone--over {
+    border-style: solid;
+}
+  
+#create .drop-zone__input {
+    display: none;
+}
+  
+#create .drop-zone__thumb {
+    width: 100px;
+    height: 100%;
+    /* border-radius: 10px; */
+    overflow: hidden;
+    background-color: #cccccc;
+    background-size: cover;
+    /* position: relative; */
+}
+
+#create .drop-zone__thumb::after {
+    content: attr(data-label);
+    /* position: absolute; */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 0;
+    color: transparent;
+    font-size: 14px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+/* End to create2 page */
