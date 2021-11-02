@@ -811,39 +811,39 @@ section#offers{
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    border: none;
+    border: 2px solid rgb(182, 245, 195);
 }
 
 #create #btn1 {
-    background-color: #ffffff;
+    background-color: #0e3137;
 }
 
 #create #btn2 {
-    background-color: #a12c71e3;
+    background-color: #5b0620;
 }
 
 #create #btn3 {
-    background-color: #cdcf39;
+    background-color: #273c16;
 }
 
 #create #btn4 {
-    background-color: #32994c;
+    background-color: #390f3f;
 }
 
 #create #btn5 {
-    background-color: #30302f;
+    background-color: #10292d;
 }
 
 #create #btn6 {
-    background-color: #a12c71e3;
+    background-color: #403612;
 }
 
 #create #btn7 {
-    background-color: #cdcf39;
+    background-color: #5b0620;
 }
 
 #create #btn8 {
-    background-color: #32994c;
+    background-color: #10292d;
 }
 /* End create, create1 pages */
 
@@ -853,7 +853,7 @@ section#offers{
 }
 
 #create .drop-zone {
-    max-width: 120px;
+    max-width: 121px;
     height: 120px;
     padding: 5px;
     display: flex;
@@ -865,11 +865,11 @@ section#offers{
     font-size: 16px;
     cursor: pointer;
     color: #cccccc;
-    border: 4px dashed #009578;
+    border: 1px dashed #e0e0e0;
     border-radius: 10px;
     position: absolute;
     top: 50%;
-    left: 31%;
+    left: 30.5%;
 }
   
 #create .drop-zone--over {
@@ -881,7 +881,7 @@ section#offers{
 }
   
 #create .drop-zone__thumb {
-    width: 100px;
+    width: 123px;
     height: 100%;
     /* border-radius: 10px; */
     overflow: hidden;
@@ -893,10 +893,10 @@ section#offers{
 #create .drop-zone__thumb::after {
     content: attr(data-label);
     /* position: absolute; */
-    bottom: 0;
-    left: 0;
+    /* bottom: 0; */
+    /* left: 0; */
     width: 100%;
-    padding: 5px 0;
+    /* padding: 5px 0; */
     color: transparent;
     font-size: 14px;
     text-align: center;
