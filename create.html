@@ -71,6 +71,11 @@
 										</div>
 
 										<div class="form-group text-left">
+											<label> Your Address: </label>
+											<input type="text" name="" class="form-control form-control-lg">
+										</div>
+
+										<div class="form-group text-left">
 											<label> Password: </label>
 											<div class="input-group">
 												<input type="password" name="" class="form-control" id="pass">
@@ -225,10 +230,10 @@
 	<!--End navbar-->
 
 	<!--End create section-->
-	<section id="create">
+	<section id="create" class="pb-5">
 
-		<div class="d-flex col-12">
-			<div class="add-text col-2 mt-2 ml-5">
+		<div class="d-flex col-12 mb-5">
+			<div class="add-text col-2 mt-2">
 				<div id="select" class="mt-5 col-8 ml-5 py-5">
 					<div class="mb-4">
 						<a href="create1.html">
@@ -244,8 +249,8 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-9">
-				<div class="container create pt-5 col-md-4">
+			<div class="col-md-6">
+				<div class="container create pt-5 col-md-6">
 					<div class="tshirt">
 						<div>
 							<img id="pic" class="hide" src="img/tshirt1.png" alt="">
@@ -266,6 +271,10 @@
 						</div>
 					</div>
 				</div>
+			</div>
+			<div class="clo-4 mt-5 pt-5 d-flex" id="content">
+				<p class="pr-2">colour:</p>
+				<p id="color_name">#000000</p>
 			</div>
 		</div>
 		
@@ -478,6 +487,50 @@
 		function change8() {
 			document.getElementById('pic').src='img/t6.png'
 		}
+
+		let btn1 = document.querySelector('#btn1');
+		let btn2 = document.querySelector('#btn2');
+		let btn3 = document.querySelector('#btn3');
+		let btn4 = document.querySelector('#btn4');
+		let btn5 = document.querySelector('#btn5');
+		let btn6 = document.querySelector('#btn6');
+		let btn7 = document.querySelector('#btn7');
+		let btn8 = document.querySelector('#btn8');
+		let content = document.querySelector('#content');
+		let paragraph = document.querySelector('#color_name');
+
+		btn1.addEventListener('click',() => {
+			paragraph.innerText = '#0e3137';
+		});
+
+		btn2.addEventListener('click',() => {
+			paragraph.innerText = '#5b0620';
+		});
+
+		btn3.addEventListener('click',() => {
+			paragraph.innerText = '#273c16';
+		});
+
+		btn4.addEventListener('click',() => {
+			paragraph.innerText = '#390f3f';
+		});
+
+		btn5.addEventListener('click',() => {
+			paragraph.innerText = '#10292d';
+		});
+
+		btn6.addEventListener('click',() => {
+			paragraph.innerText = '#403612';
+		});
+
+		btn7.addEventListener('click',() => {
+			paragraph.innerText = '#5b0620';
+		});
+
+		btn8.addEventListener('click',() => {
+			paragraph.innerText = '#10292d';
+		});
+
 	</script>
 
 </body>

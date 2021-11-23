@@ -752,7 +752,7 @@ section#offers{
 #create {
     background: rgb(218, 218, 218);
     box-shadow: #b4f8ba;
-    height: 85%;
+    /* height: 85%; */
 }
 
 #create .add-text {
@@ -769,9 +769,9 @@ section#offers{
     border-radius: 1%;
 }
 
-#create .container {
+/* #create .container {
     height: 50%; 
-}
+} */
 
 #create .subtshirt {
     max-width: none;
