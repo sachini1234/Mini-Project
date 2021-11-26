@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"><!-- Bootstrap Css -->
+
+	<script src="https://kit.fontawesome.com/e359139315.js" crossorigin="anonymous"></script>
+  <title>Document</title>
+</head>
+<body>
+
+  <!--Start topbar-->
+	<section id="topbar" class="bg-light py-1">
+		<div class="container">
+			<div class="row">
+
+				<div class="d-none d-lg-block col text-left">
+					<span class="text-secondary">
+						<i class="fas fa-phone-alt px-2"></i>Call us! +94 76 1234 268
+					</span>
+				</div>
+
+				<div class="d-flex flex-row col text-right justify-content-center">
+
+					<div class="product dropdown">
+						<a href="" class="text-secondary dropdown-toggle" id="topbarDropdown" role="button" data-toggle="dropdown">Create</a>
+						<div class="dropdown-menu">
+							<a href="" class="dropdown-item text-secondary">Shop</a>
+						</div>
+					</div>
+
+					<div class="acccount dropdown">
+						<a href="" class="text-secondary dropdown-toggle" id="topbarDropdown" role="button" data-toggle="dropdown">Account</a>
+						<div class="dropdown-menu">
+							<div class="sign-up">
+								<a href="" class="dropdown-item text-secondary" data-toggle="modal" data-target="#signup">SIGN UP</a>
+							</div>
+							<div class="login">
+								<a href="" class="dropdown-item text-secondary" data-toggle="modal" data-target="#login">LOGIN</a>
+							</div>
+						</div>
+					</div>
+
+					<!--Start content sign-up-->
+					<div class="modal" id="signup">
+						<div class="modal-dialog modal-dialog-centered">
+							<div class="modal-content">
+
+								<div class="modal-header">
+									<h3 class="text-center text-dark">Signup</h3>
+									<button type="button" class="close" data-dismiss="modal"> &times; </button>
+								</div>
+
+								<div class="modal-body">
+									<h5 class="text-center text-success">New here? Create an account</h5>
+									<form>
+										<div class="form-group text-left">
+											<label>Username: </label>
+											<input type="text" name="" class="form-control form-control-lg">
+										</div>
+
+										<div class="form-group text-left">
+											<label> Email: </label>
+											<input type="text" name="" class="form-control form-control-lg">
+										</div>
+
+										<div class="form-group text-left">
+											<label> Your Address: </label>
+											<input type="text" name="" class="form-control form-control-lg">
+										</div>
+
+										<div class="form-group text-left">
+											<label> Password: </label>
+											<div class="input-group">
+												<input type="password" name="" class="form-control" id="pass">
+												<div class="input-group-prepend">
+													<div class="input-group-text">
+														<a href="#" class="text-dark" id="icon-click">
+															<i class="fas fa-eye" id="icon"></i>
+														</a>
+													</div>
+												</div>
+											</div>	
+										</div>
+
+										<div class="form-group text-left">
+											<label> Confirm Password: </label>
+											<input type="password" name="" class="form-control form-control-lg">
+										</div>
+									</form>
+								</div>
+
+								<div class="modal-footer justify-content-center">
+									<button class="btn btn-success px-5" data-dismiss="modal">Signup</button>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<!--End content sign-up-->
+
+					<!--Start content login-->
+					<div class="modal" id="login">
+						<div class="modal-dialog modal-dialog-centered">
+							<div class="modal-content">
+
+								<div class="modal-header">
+									<h3 class="text-center text-dark">Login</h3>
+									<button type="button" class="close" data-dismiss="modal"> &times; </button>
+								</div>
+
+								<div class="modal-body">
+									<h5 class="text-left text-secondary">Want to shop? <a href="" class="text-secondary"><i class="fas fa-user px-2"></i>Register now</a></h5>
+									<h5 class="text-left text-secondary">Want to sell? <a href="" class="text-secondary"><i class="fas fa-store px-2"></i>Become a partner</a></h5>
+									<form>
+
+										<div class="form-group text-left">
+											<label> Email: </label>
+											<input type="text" name="" class="form-control">
+										</div>
+
+										<div class="form-group text-left">
+											<label> Password: </label>
+											<input type="text" name="" class="form-control">
+										</div>
+
+									</form>
+									<div class="forget-password text-left">
+										<a href="" class="text-info" data-toggle="modal" data-target="#forgetPassword" data-dismiss="modal">Forget your password?</a>
+									</div>
+								</div>
+
+								<div class="modal-footer justify-content-center">
+									<button class="btn btn-success px-5" data-dismiss="modal">Login</button>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<!--End content login-->
+
+					<!--Start content forget password-->
+					<div class="modal" id="forgetPassword">
+						<div class="modal-dialog modal-dialog-centered">
+							<div class="modal-content">
+
+								<div class="modal-header">
+									<h3 class="text-center text-dark">Reset your password</h3>
+									<button type="button" class="close" data-dismiss="modal"> &times; </button>
+								</div>
+
+								<div class="modal-body">
+									<h5 class="text-left text-secondary">To reset your password, please enter your email address and create a new password below.</h5>
+									<form>
+
+										<div class="form-group text-left">
+											<label> Email: </label>
+											<input type="text" name="" class="form-control">
+										</div>
+
+										<div class="form-group text-left">
+											<label> Password: </label>
+											<input type="text" name="" class="form-control">
+										</div>
+
+										<div class="form-group text-left">
+											<label> Confirm Password: </label>
+											<input type="text" name="" class="form-control">
+										</div>
+
+									</form>
+								</div>
+
+								<div class="modal-footer justify-content-center">
+									<button class="btn btn-success px-5" data-dismiss="modal">Reset Password</button>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<!--End content forget password-->
+
+					
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<!--End topbar-->
+
+	<!--Start navbar-->
+	<nav class="navbar navbar-expand-md navbar-dark bg-success">
+		<div class="container">
+			<a href="intro.html" class="navbar-brand">Zigzag</a><!--brand name-->
+			<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#dot">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse justify-content-center" id="dot">
+				<ul class="navbar-nav">
+
+					<li class="nav-item">
+						<a href="create.html" class="nav-link active"><span class=""></span>Start Creating
+						</a>
+					</li><!--This is the active page-->
+					<li class="nav-item">
+						<a href="mini-new/do.html" class="nav-link">Buy T-shirt</a>
+					</li>
+					<li class="nav-item">
+						<a href="about.html" class="nav-link">About Us</a>
+					</li>
+					<li class="nav-item">
+						<a href="contact.html" class="nav-link">Contact Us</a>
+					</li>
+          <li class="nav-item d-flex">
+						<a class="nav-link" id="cartIcon"><i class="fas fa-shopping-cart"></i></a>
+            <div class="RTnumber"></div>
+					</li>
+          
+				</ul>
+			</div>
+		</div>
+		
+	</nav>
+	<!--End navbar-->
+
+	<div class="clo-4 mt-5 pt-3" id="content">
+				<p class="size_chart text-center text-white bg-success py-2 px-5 mx-3">Choose Size & Quantity</p>
+				<form action="">
+					<div class="bottom">
+						<div class="white_bottom col-12">
+							<div class="detail">
+								<div class="qua mb-3">
+									<div class="text d-flex">
+										<div class="word">Quantity:&nbsp</div>
+										<div class="count">1</div>
+									</div>
+									<div class="counter">
+										<div class="sub">-</div>
+										<div class="num">1</div>
+										<div class="add">+</div>
+									</div>
+								</div>
+								<div class="color mb-3">
+									<div class="text">
+										<div class="word">Color code:&nbsp</div>
+										<div class="this_color"></div>
+									</div>
+									<div>
+										<div class="color_group d-flex mb-2">
+											<div class="c1 mr-2" id="btn1">Teal</div>
+											<div class="c2 mr-2" id="btn2" onclick="change2()">Marron</div>
+											<div class="c3 mr-2" id="btn3" onclick="change3()">Green</div>
+											<div class="c4" id="btn4" onclick="change4()">Purple</div>
+										</div>
+										<div class="color_group d-flex">
+											<div class="c5 mr-2" id="btn5" onclick="change5()">Navy</div>
+											<div class="c6 mr-2" id="btn6" onclick="change6()">Olive</div>
+											<div class="c7 mr-2" id="btn7" onclick="change7()">Marron</div>
+											<div class="c8" id="btn8" onclick="change8()">Navy</div>
+										</div>
+									</div>
+								</div>
+								<div class="size">
+									<div class="text">
+										<div class="this_size">size:&nbsp</div>
+										<div class="size_num"></div>
+									</div>
+									<ul>
+										<li>7</li>
+										<li>7.5</li>
+										<li>8</li>
+										<li>8.5</li>
+										<li>9</li>
+										<li>9.5</li>
+										<li>10</li>
+										<li>10.5</li>
+									</ul>
+								</div>
+							</div>
+							<button id="addTOCart" class="d-flex px-3 py-1 my-5">
+								<i class="fas fa-shopping-cart"></i>
+								<p class="pl-2">Add to Cart</p>
+							</button>
+						</div>
+						<div class="cart_bottom">
+						  <div class="cart_list">
+							<div class="close_btn"><span class="close">&times;</span></div>
+							<div class="title">
+							  <div class="cart_icon">
+								<svg viewbox="0 0 50 50">
+								  <path d="M22.822,28.96"></path>
+								  <polyline points="15.289,18.241 17.591,18.528 21.689,30 30.228,30 32.208,22.262 18.891,22.325 "></polyline>
+								  <circle class="w" cx="28.472" cy="32.31" r="0.996"></circle>
+								  <circle class="w" cx="23.257" cy="32.31" r="0.996"></circle>
+								</svg>
+							  </div>
+							  <h2>Your Cart</h2>
+							</div>
+							<div class="list">
+							  <div class="cart_cat">
+								<div class="desT">Description</div>
+								<div class="colorT">Color</div>
+								<div class="sizeT">Size</div>
+								<div class="QTYT">QTY</div>
+								<div class="priceT">Price</div>
+							  </div>
+							  <ul></ul>
+							</div>
+							<div class="total">
+							  <div class="totalT">Total:</div>
+							  <div class="totalP"></div>
+							</div>
+							<div class="checkout">
+							  <button class="cancel">Cancel</button>
+							  <button>Checkout</button>
+							</div>
+						  </div>
+						</div>
+					</div>
+				</form>
+			</div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

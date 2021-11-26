@@ -808,7 +808,7 @@ section#offers{
 }
 
 #about .about-us a:hover {
-    color: rgb(108, 196, 130);;
+    color: rgb(108, 196, 130);
 }
 /* End about page */
 
@@ -871,13 +871,13 @@ section#offers{
     height: 50%;
 }
 
-#create button {
+#create .tshirt-buton button {
     width: 30px;
     height: 30px;
     border-radius: 50%;
     border: 2px solid rgb(182, 245, 195);
 }
-
+/* 
 #create #btn1 {
     background-color: #0e3137;
 }
@@ -908,7 +908,7 @@ section#offers{
 
 #create #btn8 {
     background-color: #10292d;
-}
+} */
 /* End create, create1 pages */
 
 /* Start to create2 page */
