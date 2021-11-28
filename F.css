@@ -846,7 +846,7 @@ section#offers{
     position: absolute;
     top: 30%;
     color: #e6fce8;
-    left: 27%;
+    left: 30%;
     width: 130px;
     text-align: center;
     list-style-type: none;
@@ -933,7 +933,7 @@ section#offers{
     border-radius: 10px;
     position: absolute;
     top: 30%;
-    left: 30.5%;
+    left: 33%;
 }
   
 #create .drop-zone--over {

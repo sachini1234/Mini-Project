@@ -64,17 +64,21 @@ var buyListJson = {
       "i_color": "black",
       "i_size": "8",
       "i_QTY": "2",
-      "i_price": "17400"
+      "i_price": "1400"
     }
   ]
 }
-var myshirtlink='{"name": "myCart", "item": [{"src": "img/t2.png?dl=0", "i_name": "Roshe Walk "," i_color ":" Teal "," i_size ":" 8 "," i_QTY ":" 2 "," i_price ":" 17400 "}, {" src ":" img/t3.png?dl=0 "," i_name ":" Roshe Walk "," i_color " : "Marron", "i_size": "8.5", "i_QTY": "3", "i_price": "26100"}, {"src": "img/t4.png?dl=0", "i_name": "Roshe Walk "," i_color ":" Green "," i_size ":" 8 "," i_QTY ":" 2 "," i_price ":" 17400 "}, {"src": "img/t5.png?dl=0", "i_name": "Roshe Walk "," i_color ":" Purple "," i_size ":" 8 "," i_QTY ":" 2 "," i_price ":" 17400 "}, {"src": "img/t6.png?dl=0", "i_name": "Roshe Walk "," i_color ":" Navy "," i_size ":" 8 "," i_QTY ":" 2 "," i_price ":" 17400 "}, {"src": "img/t7.png?dl=0", "i_name": "Roshe Walk "," i_color ":" Olive "," i_size ":" 8 "," i_QTY ":" 2 "," i_price ":" 17400 "}, {"src": "img/t3.png?dl=0", "i_name": "Roshe Walk "," i_color ":" Maroon "," i_size ":" 8 "," i_QTY ":" 2 "," i_price ":" 17400 "}, {"src": "img/t6.png?dl=0", "i_name": "Roshe Walk "," i_color ":" Navy "," i_size ":" 8 "," i_QTY ":" 2 "," i_price ":" 17400 "}]}?dl=0'
+var myshirtlink='{"name": "myCart", "item": [{"src": "", "i_name": " "," i_color ":"  "," i_size ":"  "," i_QTY ":"  "," i_price ":"  "}]}?dl=0'
 
 
 var total = 0;
-var redsrc = "img/t2.png?dl=0";
-var whitesrc = "img/t3.png?dl=0";
-var cartlist = "<li> <div class='i_des'> <div class='pimg'><img src={{img}}/></div> <div class='i_name'>{{i_name}}</div> </div> <div class='i_color'>{{i_color}}</div> <div class='i_size'>{{i_size}}</div> <div class='i_QTY'>{{i_QTY}}</div> <div class='i_price'>$ {{i_price}}</div> <div class='i_remove'> <svg viewbox='0 0 100 100'> <g> <rect x='22' y='22' width='56' height='9'></rect> <rect x='39' y='18' width='22' height='4'></rect> <path d='M26,35v48h48V35H26z M39,74h-4V39h4V74z M52,74h-4V39h4V74z M66,74h-5V39h5V74z'></path> </g> </svg> </div> </li>";
+var t1src = "img/t2.png?dl=0";
+var t2src = "img/t3.png?dl=0";
+var t3src = "img/t4.png?dl=0";
+var t4src = "img/t5.png?dl=0";
+var t5src = "img/t6.png?dl=0";
+var t6src = "img/t7.png?dl=0";
+var cartlist = "<li> <div class='i_des'> <div class='pimg'><img src={{img}}/></div> <div class='i_name'>{{i_name}}</div> </div> <div class='i_color'>{{i_color}}</div> <div class='i_size'>{{i_size}}</div> <div class='i_QTY'>{{i_QTY}}</div> <div class='i_price'>Rs. {{i_price}}</div> <div class='i_remove'> <svg viewbox='0 0 100 100'> <g> <rect x='22' y='22' width='56' height='9'></rect> <rect x='39' y='18' width='22' height='4'></rect> <path d='M26,35v48h48V35H26z M39,74h-4V39h4V74z M52,74h-4V39h4V74z M66,74h-5V39h5V74z'></path> </g> </svg> </div> </li>";
 function createList(){
   total = 0;
   $('.list ul').html(''); //-----------clear OG list------------
@@ -106,7 +110,7 @@ function createList(){
     //console.log(total)
     //console.log($('.totalP').text()) 
   }
-  $('.totalP').text("$ " + total);
+  $('.totalP').text("Rs. " + total);
   //-----------------detect list amount------------------------
   if(buyListJson.item.length == 0){
     $('.RTnumber').css({'display': 'none'});  
@@ -124,22 +128,35 @@ $('#addTOCart').click(function(){
     return false; 
   }else{
     //alert()
-  //---------------detect shoe color----------------------------
+  //---------------detect t-shirt color----------------------------
     var thissrc = ""; 
-    if($('.this_color').text() == "Maroon"){
-      thissrc = redsrc;
-    }else{
-      thissrc = whitesrc;
+    if($('.this_color').text() == "Teal"){
+      thissrc = t1src;
+    }
+    else if($('.this_color').text() == "Maroon"){
+      thissrc = t2src;
+    }
+    else if($('.this_color').text() == "Green"){
+      thissrc = t3src;
+    }
+    else if($('.this_color').text() == "Purple"){
+      thissrc = t4src;
+    }
+    else if($('.this_color').text() == "Navy"){
+      thissrc = t5src;
+    }
+    else{
+      thissrc = t6src;
     }
   //-----------------------------------------
     buyListJson.item.unshift({
       src: thissrc, 
       i_name: $('.info .name').text(),
-      i_date: yy + '-' + mm + '-' + dd,
+      // i_date: yy + '-' + mm + '-' + dd,
       i_color: $('.this_color').text(),
       i_size: $('.size_num').text(),
       i_QTY: $('.num').text(),
-      i_price: 8700 * parseInt($('.num').text())
+      i_price: 700 * parseInt($('.num').text())
     });
     $('.RTnumber').addClass('countScale');
     createList();
